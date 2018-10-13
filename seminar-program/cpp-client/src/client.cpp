@@ -56,8 +56,6 @@ int main() {
 
         }
 
-        std::cout << action;
-
         std::cout << "Enter two operands: ";
         std::cin >> num1 >> num2;
 
