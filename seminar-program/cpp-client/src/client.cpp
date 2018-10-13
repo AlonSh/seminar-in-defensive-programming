@@ -5,7 +5,7 @@
 #include <string>
 #include <Poco/Net/HTTPRequest.h>
 #include <Poco/Net/HTTPResponse.h>
-#include <Poco/Net/HTTPClientSession.h>
+#include <Poco/Net/HTTPSClientSession.h>
 #include <Poco/JSON/Object.h>
 #include <Poco/JSON/Parser.h>
 #include <Poco/URI.h>
@@ -22,7 +22,7 @@ int main() {
     std::string path(uri.getPathAndQuery());
     if (path.empty()) path = "/";
 
-    Poco::Net::HTTPClientSession session(uri.getHost(), uri.getPort());
+    Poco::Net::HTTPSClientSession session(uri.getHost(), uri.getPort());
     Poco::Net::HTTPRequest request(Poco::Net::HTTPRequest::HTTP_POST, path, Poco::Net::HTTPMessage::HTTP_1_1);
     Poco::Net::HTTPResponse response;
 

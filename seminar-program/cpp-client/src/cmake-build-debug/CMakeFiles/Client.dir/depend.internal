@@ -18,6 +18,15 @@ CMakeFiles/Client.dir/client.cpp.o
  /usr/local/include/Poco/Buffer.h
  /usr/local/include/Poco/Bugcheck.h
  /usr/local/include/Poco/Config.h
+ /usr/local/include/Poco/Crypto/Crypto.h
+ /usr/local/include/Poco/Crypto/CryptoException.h
+ /usr/local/include/Poco/Crypto/EVPPKey.h
+ /usr/local/include/Poco/Crypto/KeyPair.h
+ /usr/local/include/Poco/Crypto/KeyPairImpl.h
+ /usr/local/include/Poco/Crypto/OpenSSLInitializer.h
+ /usr/local/include/Poco/Crypto/RSAKey.h
+ /usr/local/include/Poco/Crypto/RSAKeyImpl.h
+ /usr/local/include/Poco/Crypto/X509Certificate.h
  /usr/local/include/Poco/DateTime.h
  /usr/local/include/Poco/DateTimeFormat.h
  /usr/local/include/Poco/DateTimeFormatter.h
@@ -60,23 +69,29 @@ CMakeFiles/Client.dir/client.cpp.o
  /usr/local/include/Poco/Mutex_VX.h
  /usr/local/include/Poco/Mutex_WIN32.h
  /usr/local/include/Poco/Mutex_WINCE.h
+ /usr/local/include/Poco/Net/Context.h
  /usr/local/include/Poco/Net/HTTPClientSession.h
  /usr/local/include/Poco/Net/HTTPCookie.h
  /usr/local/include/Poco/Net/HTTPMessage.h
  /usr/local/include/Poco/Net/HTTPRequest.h
  /usr/local/include/Poco/Net/HTTPResponse.h
+ /usr/local/include/Poco/Net/HTTPSClientSession.h
  /usr/local/include/Poco/Net/HTTPSession.h
  /usr/local/include/Poco/Net/IPAddress.h
  /usr/local/include/Poco/Net/IPAddressImpl.h
  /usr/local/include/Poco/Net/MessageHeader.h
  /usr/local/include/Poco/Net/NameValueCollection.h
  /usr/local/include/Poco/Net/Net.h
+ /usr/local/include/Poco/Net/NetSSL.h
+ /usr/local/include/Poco/Net/Session.h
  /usr/local/include/Poco/Net/Socket.h
  /usr/local/include/Poco/Net/SocketAddress.h
  /usr/local/include/Poco/Net/SocketAddressImpl.h
  /usr/local/include/Poco/Net/SocketDefs.h
  /usr/local/include/Poco/Net/SocketImpl.h
  /usr/local/include/Poco/Net/StreamSocket.h
+ /usr/local/include/Poco/Net/Utility.h
+ /usr/local/include/Poco/Net/X509Certificate.h
  /usr/local/include/Poco/NotificationStrategy.h
  /usr/local/include/Poco/Nullable.h
  /usr/local/include/Poco/NumberFormatter.h

@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = -DPOCO_NO_AUTOMATIC_LIBS
 
-CXX_INCLUDES = -I/usr/include/openssl -isystem /usr/local/include 
+CXX_INCLUDES = -isystem /usr/local/include 
 

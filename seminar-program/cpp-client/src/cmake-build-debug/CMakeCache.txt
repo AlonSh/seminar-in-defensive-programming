@@ -209,6 +209,21 @@ Client_BINARY_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/
 //Value Computed by CMake
 Client_SOURCE_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src
 
+//Path to a library.
+OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/local/opt/openssl/lib/libcrypto.dylib
+
+//Path to a file.
+OPENSSL_INCLUDE_DIR:PATH=/usr/local/opt/openssl/include
+
+//No help, variable specified on the command line.
+OPENSSL_ROOT_DIR:UNINITIALIZED=/usr/local/opt/openssl
+
+//Path to a library.
+OPENSSL_SSL_LIBRARY:FILEPATH=/usr/local/opt/openssl/lib/libssl.dylib
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/local/bin/pkg-config
+
 //The directory containing a CMake configuration file for PocoFoundation.
 PocoFoundation_DIR:PATH=/usr/local/lib/cmake/Poco
 
@@ -232,18 +247,6 @@ Poco_DIR:PATH=/usr/local/lib/cmake/Poco
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
-
-//Value Computed by CMake
-Project_BINARY_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/cmake-build-debug
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src
-
-//Value Computed by CMake
-Tutorial_BINARY_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/cmake-build-debug
-
-//Value Computed by CMake
-Tutorial_SOURCE_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src
 
 
 ########################
@@ -387,6 +390,68 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding OpenSSL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/local/opt/openssl/lib/libcrypto.dylib][/usr/local/opt/openssl/include][c ][v1.0.2p()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/local/bin/pkg-config][v0.29.2()]
+OPENSSL_CFLAGS:INTERNAL=
+OPENSSL_CFLAGS_I:INTERNAL=
+OPENSSL_CFLAGS_OTHER:INTERNAL=
+//ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
+OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
+OPENSSL_FOUND:INTERNAL=
+OPENSSL_INCLUDEDIR:INTERNAL=
+//ADVANCED property for variable: OPENSSL_INCLUDE_DIR
+OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+OPENSSL_LIBDIR:INTERNAL=
+OPENSSL_LIBS:INTERNAL=
+OPENSSL_LIBS_L:INTERNAL=
+OPENSSL_LIBS_OTHER:INTERNAL=
+OPENSSL_LIBS_PATHS:INTERNAL=
+OPENSSL_PREFIX:INTERNAL=
+//ADVANCED property for variable: OPENSSL_SSL_LIBRARY
+OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
+OPENSSL_STATIC_CFLAGS:INTERNAL=
+OPENSSL_STATIC_CFLAGS_I:INTERNAL=
+OPENSSL_STATIC_CFLAGS_OTHER:INTERNAL=
+OPENSSL_STATIC_LIBDIR:INTERNAL=
+OPENSSL_STATIC_LIBS:INTERNAL=
+OPENSSL_STATIC_LIBS_L:INTERNAL=
+OPENSSL_STATIC_LIBS_OTHER:INTERNAL=
+OPENSSL_STATIC_LIBS_PATHS:INTERNAL=
+OPENSSL_VERSION:INTERNAL=
+OPENSSL_openssl_INCLUDEDIR:INTERNAL=
+OPENSSL_openssl_LIBDIR:INTERNAL=
+OPENSSL_openssl_PREFIX:INTERNAL=
+OPENSSL_openssl_VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+_OPENSSL_CFLAGS:INTERNAL=
+_OPENSSL_CFLAGS_I:INTERNAL=
+_OPENSSL_CFLAGS_OTHER:INTERNAL=
+_OPENSSL_FOUND:INTERNAL=
+_OPENSSL_INCLUDEDIR:INTERNAL=
+_OPENSSL_LIBDIR:INTERNAL=
+_OPENSSL_LIBS:INTERNAL=
+_OPENSSL_LIBS_L:INTERNAL=
+_OPENSSL_LIBS_OTHER:INTERNAL=
+_OPENSSL_LIBS_PATHS:INTERNAL=
+_OPENSSL_PREFIX:INTERNAL=
+_OPENSSL_STATIC_CFLAGS:INTERNAL=
+_OPENSSL_STATIC_CFLAGS_I:INTERNAL=
+_OPENSSL_STATIC_CFLAGS_OTHER:INTERNAL=
+_OPENSSL_STATIC_LIBDIR:INTERNAL=
+_OPENSSL_STATIC_LIBS:INTERNAL=
+_OPENSSL_STATIC_LIBS_L:INTERNAL=
+_OPENSSL_STATIC_LIBS_OTHER:INTERNAL=
+_OPENSSL_STATIC_LIBS_PATHS:INTERNAL=
+_OPENSSL_VERSION:INTERNAL=
+_OPENSSL_openssl_INCLUDEDIR:INTERNAL=
+_OPENSSL_openssl_LIBDIR:INTERNAL=
+_OPENSSL_openssl_PREFIX:INTERNAL=
+_OPENSSL_openssl_VERSION:INTERNAL=
+__pkg_config_checked_OPENSSL:INTERNAL=1
+__pkg_config_checked__OPENSSL:INTERNAL=1
 
