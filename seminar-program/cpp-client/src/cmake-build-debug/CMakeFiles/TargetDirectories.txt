@@ -1,0 +1,3 @@
+/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/cmake-build-debug/CMakeFiles/Client.dir

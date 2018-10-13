@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/client.cpp
+tkDecls.h
+-
+Poco::JSON::Object obj
+/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/Poco::JSON::Object obj
+
