@@ -15,38 +15,76 @@
 
 
 int main() {
-    Poco::JSON::Object obj;
-    obj.set("action", "add");
-    obj.set("a", 2);
-    obj.set("b", 3);
-
     Poco::URI uri("http://127.0.0.1:5000/run_task");
     std::string path(uri.getPathAndQuery());
     if (path.empty()) path = "/";
 
     Poco::Net::Context::Ptr ctx = new Poco::Net::Context(Poco::Net::Context::CLIENT_USE, "", Poco::Net::Context::VERIFY_NONE, 9, true);
     Poco::Net::HTTPSClientSession session(uri.getHost(), uri.getPort(), ctx);
-    Poco::Net::HTTPRequest request(Poco::Net::HTTPRequest::HTTP_POST, path, Poco::Net::HTTPMessage::HTTP_1_1);
-    Poco::Net::HTTPResponse response;
 
-    request.setContentType("application/json");
-    std::stringstream ss;
-    obj.stringify(ss);
-    request.setContentLength(ss.str().size());
-    std::ostream &o = session.sendRequest(request);
+    std::cout << "Welcome to task sending.\n";
 
-    obj.stringify(o);
+    int exit = 0;
+    char op;
+    std::string action;
+    int num1, num2;
 
-    // this line is where you get your response
-    std::istream &s = session.receiveResponse(response);
+    while (!exit) {
 
-    // Poco::JSON::Parser parser;
-    // Poco::JSON::Object::Ptr ret = parser.parse(s).extract<Poco::JSON::Object::Ptr>();
+        std::cout << "Enter operator either + or - or * (or e to exit):\n";
+        std::cin >> op;
 
-    int status = response.getStatus();
-    if (status != 200) {
-        std::cout << "Request Failed\n";
+        if (op == 'e') {
+            exit = 1;
+            std::cout << "Goodbye!";
+            continue;
+        }
+
+        switch (op) {
+            case '+':
+                action = "add";
+                break;
+            case '-':
+                action = "sub";
+                break;
+            case '*':
+                action = "multiply";
+                break;
+            default:
+                std::cout << "Invalid operator " << op << "\n";
+                continue;
+
+        }
+
+        std::cout << action;
+
+        std::cout << "Enter two operands: ";
+        std::cin >> num1 >> num2;
+
+        Poco::JSON::Object obj;
+        obj.set("action", action);
+        obj.set("a", num1);
+        obj.set("b", num2);
+
+        Poco::Net::HTTPRequest request(Poco::Net::HTTPRequest::HTTP_POST, path, Poco::Net::HTTPMessage::HTTP_1_1);
+        Poco::Net::HTTPResponse response;
+
+        request.setContentType("application/json");
+        std::stringstream ss;
+        obj.stringify(ss);
+        request.setContentLength(ss.str().size());
+        std::ostream &o = session.sendRequest(request);
+
+        obj.stringify(o);
+
+        std::istream &s = session.receiveResponse(response);
+
+        int status = response.getStatus();
+        if (status != 200) {
+            std::cout << "Request Failed\n";
+        }
+        Poco::StreamCopier::copyStream(s, std::cout);
+        std::cout << "\n";
     }
-    Poco::StreamCopier::copyStream(s, std::cout);
     return 0;
 }
