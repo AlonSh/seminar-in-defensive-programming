@@ -8,10 +8,15 @@ set(CMAKE_DEPENDS_CHECK_CXX
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "POCO_NO_AUTOMATIC_LIBS"
+  )
+
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/openssl"
-  "/usr/local/include/Poco/Net"
+  "/usr/local/include"
   )
 
 # Targets to which this target links.

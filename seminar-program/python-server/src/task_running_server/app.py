@@ -11,11 +11,12 @@ SUPPORTED_ACTIONS = {
 }
 
 
-@app.route('/run_task')
+@app.route('/run_task', methods=['POST'])
 def run_task():
     request_data = request.json
 
     if not request_data:
+        print('1')
         return 'Request must contain action and parameters in a JSON object', 400
 
     action = request_data.get('action', None)
@@ -32,11 +33,12 @@ def run_task():
     a = request_data['a']
     b = request_data['b']
 
-    if not a.isdigit() or not b.isdigit():
+    if not isinstance(a, int) or not isinstance(b, int):
         return f'The arguments of the action, "a" and "b" must be integers, not "{a}","{b}"!', 400
 
-    return SUPPORTED_ACTIONS[action](int(a), int(b))
+    return str(SUPPORTED_ACTIONS[action](int(a), int(b)))
 
 
 if __name__ == '__main__':
-    app.run(ssl_context='adhoc')
+    #app.run(ssl_context='adhoc')
+    app.run(debug=True)

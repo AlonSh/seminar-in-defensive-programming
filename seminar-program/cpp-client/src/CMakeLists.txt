@@ -9,5 +9,5 @@ find_package(Poco REQUIRED COMPONENTS Foundation Net Zip )
 
 add_executable(Client client.cpp)
 
-target_link_libraries(my_exe PUBLIC Poco::Foundation Poco::Zip Poco::Net)
+target_link_libraries(Client PUBLIC Poco::Foundation Poco::Zip Poco::Net)
 

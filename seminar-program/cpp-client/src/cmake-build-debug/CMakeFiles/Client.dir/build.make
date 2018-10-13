@@ -79,6 +79,12 @@ Client_EXTERNAL_OBJECTS =
 
 Client: CMakeFiles/Client.dir/client.cpp.o
 Client: CMakeFiles/Client.dir/build.make
+Client: /usr/local/lib/libPocoZip.60.dylib
+Client: /usr/local/lib/libPocoNet.60.dylib
+Client: /usr/local/lib/libPocoUtil.60.dylib
+Client: /usr/local/lib/libPocoJSON.60.dylib
+Client: /usr/local/lib/libPocoXML.60.dylib
+Client: /usr/local/lib/libPocoFoundation.60.dylib
 Client: CMakeFiles/Client.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Client.dir/link.txt --verbose=$(VERBOSE)

@@ -209,8 +209,26 @@ Client_BINARY_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/
 //Value Computed by CMake
 Client_SOURCE_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src
 
+//The directory containing a CMake configuration file for PocoFoundation.
+PocoFoundation_DIR:PATH=/usr/local/lib/cmake/Poco
+
+//The directory containing a CMake configuration file for PocoJSON.
+PocoJSON_DIR:PATH=/usr/local/lib/cmake/Poco
+
+//The directory containing a CMake configuration file for PocoNet.
+PocoNet_DIR:PATH=/usr/local/lib/cmake/Poco
+
+//The directory containing a CMake configuration file for PocoUtil.
+PocoUtil_DIR:PATH=/usr/local/lib/cmake/Poco
+
+//The directory containing a CMake configuration file for PocoXML.
+PocoXML_DIR:PATH=/usr/local/lib/cmake/Poco
+
+//The directory containing a CMake configuration file for PocoZip.
+PocoZip_DIR:PATH=/usr/local/lib/cmake/Poco
+
 //The directory containing a CMake configuration file for Poco.
-Poco_DIR:PATH=Poco_DIR-NOTFOUND
+Poco_DIR:PATH=/usr/local/lib/cmake/Poco
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl

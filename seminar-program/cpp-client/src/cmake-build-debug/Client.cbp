@@ -5,7 +5,7 @@
 		<Option title="Client"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/cmake-build-debug"/>
@@ -44,10 +44,10 @@
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler>
+					<Add option="-DPOCO_NO_AUTOMATIC_LIBS"/>
 					<Add directory="/usr/include/openssl"/>
-					<Add directory="/usr/local/include/Poco/Net"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -67,10 +67,10 @@
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler>
+					<Add option="-DPOCO_NO_AUTOMATIC_LIBS"/>
 					<Add directory="/usr/include/openssl"/>
-					<Add directory="/usr/local/include/Poco/Net"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -89,6 +89,102 @@
 		</Unit>
 		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoFoundationConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoFoundationConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoFoundationTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoFoundationTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoFoundationTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoJSONConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoJSONConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoJSONTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoJSONTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoJSONTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoUtilConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoUtilConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoUtilTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoUtilTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoUtilTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoXMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoXMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoXMLTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoXMLTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoXMLTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoZipConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoZipConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoZipTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoZipTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoZipTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
