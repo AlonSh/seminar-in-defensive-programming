@@ -45,6 +45,7 @@
 				<Option compiler="clang"/>
 				<Compiler>
 					<Add option="-DPOCO_NO_AUTOMATIC_LIBS"/>
+					<Add directory="/usr/local/opt/openssl/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
@@ -67,6 +68,7 @@
 				<Option compiler="clang"/>
 				<Compiler>
 					<Add option="-DPOCO_NO_AUTOMATIC_LIBS"/>
+					<Add directory="/usr/local/opt/openssl/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
@@ -92,6 +94,18 @@
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
 		</Unit>
 		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoCryptoConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoCryptoConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoCryptoTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoCryptoTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
 		</Unit>
 		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoFoundationConfig.cmake">
@@ -128,6 +142,18 @@
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
 		</Unit>
 		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetSSLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetSSLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetSSLTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
+		</Unit>
+		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetSSLTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Poco\"/>
 		</Unit>
 		<Unit filename="/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/../../../../../../../usr/local/lib/cmake/Poco/PocoNetTargets-release.cmake">

@@ -1,4 +1,4 @@
-"/Users/alons/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl -G "CodeBlocks - Unix Makefiles" /Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src
+"/Users/alons/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/include/ -G "CodeBlocks - Unix Makefiles" /Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src/cmake-build-debug

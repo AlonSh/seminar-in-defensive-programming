@@ -210,25 +210,31 @@ Client_BINARY_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/
 Client_SOURCE_DIR:STATIC=/Users/alons/Projects/seminar-in-defensive-programming/seminar-program/cpp-client/src
 
 //Path to a library.
-OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/local/opt/openssl/lib/libcrypto.dylib
+OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/libcrypto.dylib
 
 //Path to a file.
 OPENSSL_INCLUDE_DIR:PATH=/usr/local/opt/openssl/include
 
 //No help, variable specified on the command line.
-OPENSSL_ROOT_DIR:UNINITIALIZED=/usr/local/opt/openssl
+OPENSSL_ROOT_DIR:UNINITIALIZED=/usr/local/opt/openssl/include/
 
 //Path to a library.
-OPENSSL_SSL_LIBRARY:FILEPATH=/usr/local/opt/openssl/lib/libssl.dylib
+OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/libssl.dylib
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/local/bin/pkg-config
+
+//The directory containing a CMake configuration file for PocoCrypto.
+PocoCrypto_DIR:PATH=/usr/local/lib/cmake/Poco
 
 //The directory containing a CMake configuration file for PocoFoundation.
 PocoFoundation_DIR:PATH=/usr/local/lib/cmake/Poco
 
 //The directory containing a CMake configuration file for PocoJSON.
 PocoJSON_DIR:PATH=/usr/local/lib/cmake/Poco
+
+//The directory containing a CMake configuration file for PocoNetSSL.
+PocoNetSSL_DIR:PATH=/usr/local/lib/cmake/Poco
 
 //The directory containing a CMake configuration file for PocoNet.
 PocoNet_DIR:PATH=/usr/local/lib/cmake/Poco
@@ -391,39 +397,13 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenSSL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/local/opt/openssl/lib/libcrypto.dylib][/usr/local/opt/openssl/include][c ][v1.0.2p()]
-//Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/local/bin/pkg-config][v0.29.2()]
-OPENSSL_CFLAGS:INTERNAL=
-OPENSSL_CFLAGS_I:INTERNAL=
-OPENSSL_CFLAGS_OTHER:INTERNAL=
+FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/libcrypto.dylib][/usr/local/opt/openssl/include][c ][v1.0.2p()]
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
-OPENSSL_FOUND:INTERNAL=
-OPENSSL_INCLUDEDIR:INTERNAL=
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
 OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
-OPENSSL_LIBDIR:INTERNAL=
-OPENSSL_LIBS:INTERNAL=
-OPENSSL_LIBS_L:INTERNAL=
-OPENSSL_LIBS_OTHER:INTERNAL=
-OPENSSL_LIBS_PATHS:INTERNAL=
-OPENSSL_PREFIX:INTERNAL=
 //ADVANCED property for variable: OPENSSL_SSL_LIBRARY
 OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
-OPENSSL_STATIC_CFLAGS:INTERNAL=
-OPENSSL_STATIC_CFLAGS_I:INTERNAL=
-OPENSSL_STATIC_CFLAGS_OTHER:INTERNAL=
-OPENSSL_STATIC_LIBDIR:INTERNAL=
-OPENSSL_STATIC_LIBS:INTERNAL=
-OPENSSL_STATIC_LIBS_L:INTERNAL=
-OPENSSL_STATIC_LIBS_OTHER:INTERNAL=
-OPENSSL_STATIC_LIBS_PATHS:INTERNAL=
-OPENSSL_VERSION:INTERNAL=
-OPENSSL_openssl_INCLUDEDIR:INTERNAL=
-OPENSSL_openssl_LIBDIR:INTERNAL=
-OPENSSL_openssl_PREFIX:INTERNAL=
-OPENSSL_openssl_VERSION:INTERNAL=
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
@@ -452,6 +432,5 @@ _OPENSSL_openssl_INCLUDEDIR:INTERNAL=
 _OPENSSL_openssl_LIBDIR:INTERNAL=
 _OPENSSL_openssl_PREFIX:INTERNAL=
 _OPENSSL_openssl_VERSION:INTERNAL=
-__pkg_config_checked_OPENSSL:INTERNAL=1
 __pkg_config_checked__OPENSSL:INTERNAL=1
 
