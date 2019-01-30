@@ -57,7 +57,7 @@ int main() {
 
         }
 
-        std::cout << "Enter two operands: ";
+        std::cout << "Enter two operands: \n";
         std::cin >> num1 >> num2;
 
         Poco::JSON::Object obj;
@@ -84,6 +84,7 @@ int main() {
         }
         Poco::StreamCopier::copyStream(s, std::cout);
         std::cout << "\n";
+        std::cin.clear();
     }
     return 0;
 }
