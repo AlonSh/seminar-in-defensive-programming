@@ -16,7 +16,6 @@ def run_task():
     request_data = request.json
 
     if not request_data:
-        print('1')
         return 'Request must contain action and parameters in a JSON object', 400
 
     action = request_data.get('action', None)

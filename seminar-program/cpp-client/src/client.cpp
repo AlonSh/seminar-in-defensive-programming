@@ -19,7 +19,8 @@ int main() {
     std::string path(uri.getPathAndQuery());
     if (path.empty()) path = "/";
 
-    Poco::Net::Context::Ptr ctx = new Poco::Net::Context(Poco::Net::Context::CLIENT_USE, "", Poco::Net::Context::VERIFY_NONE, 9, true);
+    Poco::Net::Context::Ptr ctx = new Poco::Net::Context(Poco::Net::Context::CLIENT_USE, "",
+                                                         Poco::Net::Context::VERIFY_NONE, 9, true);
     Poco::Net::HTTPSClientSession session(uri.getHost(), uri.getPort(), ctx);
 
     std::cout << "Welcome to task sending.\n";
